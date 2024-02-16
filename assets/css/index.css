@@ -11,6 +11,12 @@
     initial-value: #ef3633;
   }
 
+  @property --tertiary-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #6a6a6a;
+  }
+
 
 /* Actual Styling */
 html {
@@ -31,22 +37,17 @@ nav {
     background-color: var(--primary-color);
 }
 
-.nav_logo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
 .nav_links {
     display: flex;
     justify-content: space-around;
-    width: 20%
+    align-items: center;
+    width: 60%;
+    color: #ffffff;
+    text-align: center;
 
 }
 
 .nav_link {
-    text-decoration: none;
     color: white
 }
 
@@ -56,7 +57,7 @@ hero {
     align-items: center;
     justify-content: center;
     height: 88vh;
-    background-image: url("https://floridatrippers.com/wp-content/uploads/2022/03/things-to-do-in-indian-rocks-beach-city.jpg");
+    background-image: url("../images/bigbeautifulbeach.jpg");
     background-size: cover;
     color: #141414;
     text-align: center;
@@ -65,43 +66,102 @@ hero {
 
 .divider {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 8vh;
     background-color: var(--secondary-color);
     color: white;
     text-align: center;
+    font-size: 1.5em;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    padding: 0 2em;
+    background-color: var(--tertiary-color);
 }
 
 .about {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     height: 44vh;
+    background-color: white;
 
+}
+
+.about_img_container {
+    height: 40vh;
+}
+
+.about_img {
+    object-fit: contain;
+    height: 40vh;
+}
+
+.about_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+
+.about_header {
+    font-size: 2em
+}
+
+.about_text {
+    font-size: 1.5em
 }
 
 .issues {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     height: 44vh;
+    background-color: white;
 }
 
 .issues_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: center;
+    width: 70%;
+    height: 100%;
+}
+
+.issues_header {
+    font-size: 2em;
 }
 
 .issues_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
 }
 
 .issues_list_item {
+    font-size: 1.5em;
+}
+
+.issues_img_container {
+    height: 40vh;
+}
+
+.issues_img {
+    height: 40vh;
+    object-fit: cover;
 }
 
 footer {
