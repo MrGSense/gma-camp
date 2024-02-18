@@ -210,6 +210,12 @@ footer {
     .divider {
         font-size: 1em;
     }
+
+    
+    .about {
+        height: 100%;
+    }
+
     
     .issues {
         flex-direction: column;
@@ -228,10 +234,6 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-    .about {
-        height: 100%;
-    }
-    
     .about_img {
        display: none; 
     }
