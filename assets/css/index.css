@@ -31,35 +31,34 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    height: 4vh;
+    justify-content: space-between;
+    height: 6vh;
     background-color: var(--primary-color);
-}
-
-.nav_links {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    color: #ffffff;
-    text-align: center;
-
-}
-
-.nav_link {
     color: white;
+    padding: 0 2%;
+    font-size: 1.5em;
+}
+
+.nav_icon {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_text {
+    font-weight: 800;
 }
 
 hero {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    height: 88vh;
+    height: 86vh;
     background-image: url("../images/bigbeautifulbeach.jpg");
     background-size: cover;
     color: #141414;
     text-align: center;
+    padding: 0 10%;
 
 }
 
@@ -78,7 +77,13 @@ hero {
     width: 200px;
     border-radius: 50%;
     object-fit: cover;
+    box-shadow: lightyellow 1px -1px 10px 20px;
 
+}
+
+.hero_content {
+    font-size: 2em;
+    color: white;
 }
 
 .divider {
@@ -99,6 +104,7 @@ main {
     align-items: center;
     padding: 0 2em;
     background-color: var(--tertiary-color);
+    height: 96vh;
 }
 
 .about {
@@ -109,10 +115,6 @@ main {
     height: 44vh;
     background-color: white;
     padding: 1em;
-}
-
-.about_img_container {
-    height: 40vh;
 }
 
 .about_img {
@@ -174,10 +176,6 @@ main {
     list-style-type: disclosure-closed;
 }
 
-.issues_img_container {
-    height: 40vh;
-}
-
 .issues_img {
     height: 40vh;
     object-fit: cover;
@@ -196,4 +194,76 @@ footer {
     width: 100%
 }
 
-/* Animation Frames */
+.builtby {
+    position: absolute;
+    color: white;
+    right: 1em;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+    main {
+        padding: 0;
+        height: 100%;
+    }
+
+    .divider {
+        font-size: 1em;
+    }
+    
+    .issues {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .issues_content {
+        width: 100%;
+        
+    }
+
+    .issues_img {
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about {
+        height: 100%;
+    }
+    
+    .about_img {
+       display: none; 
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .issues_img {
+        height: auto;
+        width: 80vw
+    }
+
+    .hero_content {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        font-size: .8em;
+    }
+
+    .hero_headshot {
+        height: 150px;
+        width: 150px;
+    }
+
+    .hero_headshot_img {
+        height: 150px;
+        width: 150px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+}
