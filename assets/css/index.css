@@ -105,6 +105,10 @@ hero {
   background-color: var(--primary-color);
 }
 
+.divider_footer {
+  height: 4vh;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -231,6 +235,20 @@ main {
   text-align: left;
   list-style-type: upper-roman;
   margin: 5px 10px;
+}
+
+.tofacebook {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  padding: 1em;
+}
+
+.tofacebook_text {
+  font-size: 1.4em;
 }
 
 footer {
