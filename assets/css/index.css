@@ -94,7 +94,7 @@ hero {
   justify-content: center;
   align-items: center;
   height: 8vh;
-  width: 100%;
+  width: 100vw;
   background-color: var(--secondary-color);
   color: white;
   text-align: center;
